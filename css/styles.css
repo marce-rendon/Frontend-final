@@ -1,6 +1,61 @@
-/* Estilos del proyecto */
-* {
+/* 
+# Guía de estilo de front-end
 
+## Diseño
+
+Los diseños se crearon con los siguientes anchos:
+- Mobile: 480px
+- Desktop: 1440px
+
+## Colores
+
+### Primario
+Violeta: #8B48BF
+Celeste brillante: #3CDDF3
+
+### Neutro
+Azul grisáceo oscuro: #1E1E26
+Azul muy oscuro: #232851
+Variante gris claro: rgb (249, 249, 249)
+
+## Tipografia
+
+### Body Copy
+- Font size: 16px
+
+### Font
+- Family: [Be Vietnam Pro](https://fonts.google.com/specimen/Be+Vietnam+Pro)
+- Weights: 400, 500, 700
+
+## Icons
+Para los íconos sociales, puede usar los íconos provistos o una biblioteca de íconos de fuentes. Ej:
+
+- [Font Awesome](https://fontawesome.com)
+
+## Properties for the flex container
+## Properties for the flex items
+https://codepen.io/enxaneta/full/adLPwv/
+*/
+* {
+    /* Typography */
+    font-size: 16px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+
+    /* Layout */
+    box-sizing: border-box;
+    margin: auto;
+    /*width: 100vw;*/
+    width: 1439px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* 
@@ -51,6 +106,116 @@ Footer
 ==============================================
 */ 
 #pie-de-pagina {
+    /* Layout */
+    /*width: 1439px;*/
+    height: 247px;
+    flex-shrink: 0;
+
+    /* Style */
+    background: #1E1E26;
+
+    /* ----------------------------------------------------
+    Flex container
+    #pie-de-pagina
+
+    Flex items del flex container
+    #pie-de-pagina-XXXX
+    ---------------------------------------------------- */
+
+    /* Properties for the flex container */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start; /* Vertical */
+    justify-content: space-around; /* Horizontal */
+    align-content: flex-start;
+}
+
+#pie-de-pagina > div {
+    /* Layout */
+    height: 100%;
+    width: 25%;
+    border: yellow 5px solid;
+}
+
+
+#pie-de-pagina-logo {
 
 }
 
+#pie-de-pagina-menu {
+
+}
+
+#pie-de-pagina-links {
+
+}
+
+#pie-de-pagina-menu li, #pie-de-pagina-links li {
+    /* Layout */
+    padding-bottom: 12px;
+}
+
+#pie-de-pagina-menu a:link, #pie-de-pagina-links a:link {
+    /* Typography */
+    text-decoration: none;
+    color: #FFF;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#pie-de-pagina-call-to-action {
+    /* ----------------------------------------------------
+    Flex container
+    #pie-de-pagina-call-to-action
+
+    Flex items del flex container
+    .newsletter
+    .boton
+    ---------------------------------------------------- */
+    
+    /* Properties for the flex container */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start; /* Vertical */
+    justify-content:  flex-start; /* Horizontal */
+    align-content: flex-start;    
+}
+
+.newsletter {
+    /* Layout */
+    width: 201px;
+    height: 44px;
+    padding-left: 10px;
+
+    /* Style */
+    border-radius: 50px;
+    background: #FFF;
+
+    /* Typography */
+    color: #A0A0A0;
+    font-size: 13.181px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.boton {
+    /* Layout */
+    width: 63px;
+    height: 44px;
+    margin-left: 9px;
+
+    /* Style */
+    border-radius: 50px;
+    background: #8B48BF;
+
+    /* Typography */
+    color: #FFF;
+    font-size: 13.181px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
