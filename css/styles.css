@@ -39,9 +39,11 @@ https://codepen.io/enxaneta/full/adLPwv/
 * {
     /* Layout */
     box-sizing: border-box;
-    margin: auto;
-    /*width: 100vw;*/
-    width: 1439px;
+    /*margin: auto;*/
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    /* width: 1439px; */
 
     /* Typography */
     font-size: 16px;
@@ -167,9 +169,7 @@ Footer
 */ 
 #pie-de-pagina {
     /* Layout */
-    /*width: 1439px;*/
     height: 247px;
-    flex-shrink: 0;
 
     /* Style */
     background: #1E1E26;
@@ -197,7 +197,6 @@ Footer
     width: 25%;
     border: yellow 5px solid;
 }
-
 
 #pie-de-pagina-logo {
 
@@ -238,10 +237,14 @@ Footer
     /* Properties for the flex container */
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: flex-start; /* Vertical */
     justify-content: flex-start; /* Horizontal */
     align-content: flex-start;    
+}
+
+.container-newsletter {
+
 }
 
 .newsletter {
@@ -249,8 +252,6 @@ Footer
     width: 201px;
     height: 44px;
     padding-left: 10px;
-
-
 
     /* Style */
     border-radius: 50px;
@@ -268,7 +269,6 @@ Footer
     /* Layout */
     width: 63px;
     height: 44px;
-    margin-left: 9px;
 
     /* Style */
     border-radius: 50px;
