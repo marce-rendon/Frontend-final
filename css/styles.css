@@ -37,24 +37,28 @@ Para los íconos sociales, puede usar los íconos provistos o una biblioteca de 
 https://codepen.io/enxaneta/full/adLPwv/
 */
 * {
-    /* Typography */
-    font-size: 16px;
-    font-family: 'Be Vietnam Pro', sans-serif;
-
     /* Layout */
     box-sizing: border-box;
     margin: auto;
     /*width: 100vw;*/
     width: 1439px;
+
+    /* Typography */
+    font-size: 16px;
+    font-family: 'Be Vietnam Pro', sans-serif;
 }
 
 ul {
-    list-style-type: none;
+    /* Layout */
     margin: 0;
     padding: 0;
+    
+    /* Style */
+    list-style-type: none;
 }
 
 a {
+    /* Style */
     text-decoration: none;
 }
 
@@ -64,11 +68,27 @@ Header
 ==============================================
 */ 
 #encabezado {
+    /* Layout */
+
+
+    /* Style */
+
+
+    /* Typography */
+
 
 }
 
 #menu {
+    /* Layout */
 
+
+    /* Style */
+
+
+    /* Typography */
+
+    
 }
 
 /* 
@@ -77,27 +97,67 @@ Main
 ==============================================
 */ 
 #principal {
+    /* Layout */
 
+
+    /* Style */
+
+
+    /* Typography */
+
+    
 }
 
 /* Hero */
 #hero {
+    /* Layout */
 
+
+    /* Style */
+
+
+    /* Typography */
+
+    
 }
 
 /* What´s different between pros? */
 #pros {
+    /* Layout */
 
+
+    /* Style */
+
+
+    /* Typography */
+
+    
 }
 
 /* Best of the month */
 #pros {
+    /* Layout */
 
+
+    /* Style */
+
+
+    /* Typography */
+
+    
 }
 
 /* Get to know the best teams of the year */
 #teams {
+    /* Layout */
 
+
+    /* Style */
+
+
+    /* Typography */
+
+    
 }
 
 /* 
@@ -180,7 +240,7 @@ Footer
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: flex-start; /* Vertical */
-    justify-content:  flex-start; /* Horizontal */
+    justify-content: flex-start; /* Horizontal */
     align-content: flex-start;    
 }
 
@@ -189,6 +249,8 @@ Footer
     width: 201px;
     height: 44px;
     padding-left: 10px;
+
+
 
     /* Style */
     border-radius: 50px;
