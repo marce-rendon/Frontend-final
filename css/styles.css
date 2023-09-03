@@ -137,7 +137,7 @@ Main
 }
 
 /* Best of the month */
-#pros {
+#best {
     /* Layout */
 
 
@@ -170,6 +170,10 @@ Footer
 #pie-de-pagina {
     /* Layout */
     height: 247px;
+    padding-left: 170px;
+    padding-right: 170px;
+    padding-top: 56px;
+    padding-bottom: 43px;
 
     /* Style */
     background: #1E1E26;
@@ -195,11 +199,28 @@ Footer
     /* Layout */
     height: 100%;
     width: 25%;
-    border: yellow 5px solid;
+    /* border: yellow 5px solid; */
 }
 
-#pie-de-pagina-logo {
+#pie-de-pagina-logo .logo {
+    /* Layout */
+    margin-bottom: 70px;
+}
 
+#pie-de-pagina-logo .logo svg {
+    /* Layout */
+    width: 107.684px;
+    height: 25px;
+}
+
+#pie-de-pagina-logo .redes-sociales svg {
+    /* Layout */
+    width: 20px;
+    height: 20px;
+}
+
+#pie-de-pagina-logo .redes-sociales svg:hover {
+    cursor: pointer;
 }
 
 #pie-de-pagina-menu {
@@ -210,21 +231,22 @@ Footer
 
 }
 
-#pie-de-pagina-menu li, #pie-de-pagina-links li {
+#pie-de-pagina-menu li,
+#pie-de-pagina-links li {
     /* Layout */
     padding-bottom: 12px;
 }
 
-#pie-de-pagina-menu a:link, #pie-de-pagina-links a:link {
+#pie-de-pagina-menu a:link,
+#pie-de-pagina-links a:link {
     /* Typography */
-    text-decoration: none;
     color: #FFF;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
-#pie-de-pagina-call-to-action {
+#pie-de-pagina-formulario {
     /* ----------------------------------------------------
     Flex container
     #pie-de-pagina-call-to-action
@@ -232,6 +254,7 @@ Footer
     Flex items del flex container
     .newsletter
     .boton
+    .copyright
     ---------------------------------------------------- */
     
     /* Properties for the flex container */
@@ -243,11 +266,12 @@ Footer
     align-content: flex-start;    
 }
 
-.container-newsletter {
-
+#pie-de-pagina-formulario .formulario {
+    /* Layout */
+    margin-bottom: 80px;
 }
 
-.newsletter {
+#pie-de-pagina-formulario .newsletter {
     /* Layout */
     width: 201px;
     height: 44px;
@@ -265,10 +289,11 @@ Footer
     line-height: normal;
 }
 
-.boton {
+#pie-de-pagina-formulario .boton {
     /* Layout */
     width: 63px;
     height: 44px;
+    margin-left: 9px;
 
     /* Style */
     border-radius: 50px;
@@ -277,6 +302,38 @@ Footer
     /* Typography */
     color: #FFF;
     font-size: 13.181px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* a:hover */
+#pie-de-pagina-menu a:hover,
+#pie-de-pagina-links a:hover,
+#pie-de-pagina-formulario .boton:hover
+/* .boton:hover */
+/* input[type=submit]:hover */
+{
+    /* Layout */
+    padding: 12px 0px;
+
+    /* Style */
+    background: #3CDDF3;
+    border: none;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s all;
+
+    /* Typography */
+    color: #1E1E26;
+    text-decoration: none;
+}
+
+#pie-de-pagina-formulario .copyright {
+    /* Typography */
+    color: #8C8C94;
+    font-size: 12.5px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
