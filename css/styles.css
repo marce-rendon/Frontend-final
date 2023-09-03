@@ -250,7 +250,7 @@ Footer
     background: #1E1E26;
 }
 
-#pie-de-pagina > div {
+#pie-de-pagina > section {
     /* Layout */
     height: 100%;
     width: 25%;
@@ -363,6 +363,7 @@ Footer
 }
 
 /* a:hover */
+#teams .boton:hover,
 #pie-de-pagina-menu a:hover,
 #pie-de-pagina-links a:hover,
 #pie-de-pagina-formulario .boton:hover
