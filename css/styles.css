@@ -150,14 +150,73 @@ Main
 /* Get to know the best teams of the year */
 #teams {
     /* Layout */
+    /* width: 1440px; */
+    height: 224px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 56px;
+    padding-bottom: 43px;
+    /* ----------------------------------------------------
+    Flex container
+    #teams
 
+    Flex items del flex container
+    .teams-leyenda
+    .teams-boton
+    ---------------------------------------------------- */
+    /* Properties for the flex container */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start; /* Horizontal */
+    align-items: flex-start; /* Vertical */
+    align-content: flex-start; /* Vertical -> contenedores multilínea debemos utilizar align-content */
 
     /* Style */
+    background: #8B48BF;
+}
 
+#teams .teams-leyenda {
+    /* Layout */
+    height: 100%;
+    width: 40%;
+    /* border: yellow 5px solid; */
+}
+
+#teams .get-the-best {
+    /* Typography */
+    color: #FFF;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 119.6%; /* 47.84px */
+    letter-spacing: -0.2px;
+}
+
+#teams .teams-boton {
+    /* Layout */
+    height: 100%;
+    width: 60%;
+    /* border: yellow 5px solid; */
+}
+
+#teams .boton {
+    /* Layout */
+    width: 134px;
+    height: 44px;
+    margin-left: 80%;
+    
+    /* Style */
+    border-radius: 50px;
+    background: #FFF;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
 
     /* Typography */
-
-    
+    color: #8B48BF;
+    font-size: 13.181px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
 /* 
@@ -172,10 +231,6 @@ Footer
     padding-right: 10%;
     padding-top: 56px;
     padding-bottom: 43px;
-
-    /* Style */
-    background: #1E1E26;
-
     /* ----------------------------------------------------
     Flex container
     #pie-de-pagina
@@ -183,14 +238,16 @@ Footer
     Flex items del flex container
     #pie-de-pagina-XXXX
     ---------------------------------------------------- */
-
     /* Properties for the flex container */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: flex-start; /* Vertical */
     justify-content: space-around; /* Horizontal */
-    align-content: flex-start;
+    align-items: flex-start; /* Vertical */
+    align-content: flex-start; /* Vertical -> contenedores multilínea debemos utilizar align-content */
+
+    /* Style */
+    background: #1E1E26;
 }
 
 #pie-de-pagina > div {
@@ -245,6 +302,7 @@ Footer
 }
 
 #pie-de-pagina-formulario {
+    /* Layout */
     /* ----------------------------------------------------
     Flex container
     #pie-de-pagina-call-to-action
@@ -254,14 +312,13 @@ Footer
     .boton
     .copyright
     ---------------------------------------------------- */
-    
     /* Properties for the flex container */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: flex-start; /* Vertical */
     justify-content: flex-start; /* Horizontal */
-    align-content: flex-start;    
+    align-items: flex-start; /* Vertical */
+    align-content: flex-start; /* Vertical -> contenedores multilínea debemos utilizar align-content */
 }
 
 #pie-de-pagina-formulario .formulario {
