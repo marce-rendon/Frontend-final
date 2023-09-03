@@ -68,28 +68,34 @@ Header
 ==============================================
 */ 
 #encabezado {
-    /* Layout */
-
-
-    /* Style */
-
-
-    /* Typography */
-
-
+    display: inline-flex;
+    text-align: center;
+    width: 100%;
 }
 
-#menu {
-    /* Layout */
-
-
-    /* Style */
-
-
-    /* Typography */
-
-    
+.logo-encabezado{
+    padding: 65px 165px;
 }
+
+.menu {
+    padding: 65px 165px;
+    justify-content: center;
+    align-items: center;
+    gap: 224px;
+    color: #242E52;
+    font-family: Be Vietnam;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 176.1%; /* 22.893px */
+}
+
+.menu ul li{
+    display: inline-flex;
+    padding-right: 28px;
+}
+
+
 
 /* 
 ==============================================
