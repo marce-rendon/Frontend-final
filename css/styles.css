@@ -78,7 +78,7 @@ a {
 
 /* -------------------------------------- */
 
-.menu {
+.menu a {
     justify-content: center;
     align-items: center;
     gap: 224px;
@@ -95,10 +95,10 @@ a {
     padding-right: 28px;
 }
 
-.menu ul li:hover {
+/* .menu ul li:hover {
     cursor: pointer;
     text-decoration: underline;
-}
+} */
 
 #encabezado .boton {
     display: flex;
@@ -115,11 +115,11 @@ a {
     position: relative;
 }
 
-#encabezado .boton:hover {
+/* #encabezado .boton:hover {
     cursor: pointer;
     background: #3CDDF3;
     color: #1E1E26;
-}
+} */
 
 /* 
 ==============================================
@@ -140,11 +140,11 @@ Main
     position: sticky;
 }
 
-#principal .boton:hover {
+/* #principal .boton:hover {
     cursor: pointer;
     background: #3CDDF3;
     color: #1E1E26; 
-}
+} */
 
 /* -------------------------------------- */
 /* Hero */
@@ -188,6 +188,8 @@ Main
     font-style: normal;
     font-weight: 300;
     line-height: 157.1%;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 
@@ -900,17 +902,23 @@ Main
 /* -------------------------------------- */
 /* hover | Botones, menus, links */
 /* -------------------------------------- */
+#encabezado .boton:hover,
+#encabezado .menu a:hover,
+#principal .boton:hover,
 #best-of-the-month .boton:hover,
 #best-teams-of-the-year .boton-best-teams .boton:hover,
 #pie-de-pagina #menu a:hover,
 #pie-de-pagina #links a:hover,
-#pie-de-pagina #newsletter .formulario .boton:hover,
-#encabezado .boton:hover {
+#pie-de-pagina #newsletter .formulario .boton:hover
+{
     /* Layout */
     padding: 12px 0px;
 
     /* Style */
     background: #3CDDF3;
+    border-radius: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
     border: none;
     box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
     cursor: pointer;
