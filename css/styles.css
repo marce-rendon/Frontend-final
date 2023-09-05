@@ -40,7 +40,7 @@ https://codepen.io/enxaneta/full/adLPwv/
     /* Layout */
     box-sizing: border-box;
     /* Ancho máximo para desktop */
-    max-width: 1440px; 
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0;
 
@@ -53,7 +53,7 @@ https://codepen.io/enxaneta/full/adLPwv/
 ul {
     /* Layout */
     margin: 0;
-    
+
     /* Style */
     list-style-type: none;
 }
@@ -74,9 +74,8 @@ a {
     align-items: center;
 }
 
-.logo-encabezado{
+.logo-encabezado {}
 
-}
 /* -------------------------------------- */
 
 .menu {
@@ -87,10 +86,11 @@ a {
     font-size: 13px;
     font-style: normal;
     font-weight: 500;
-    line-height: 176.1%; /* 22.893px */
+    line-height: 176.1%;
+    /* 22.893px */
 }
 
-.menu ul li{
+.menu ul li {
     display: inline-flex;
     padding-right: 28px;
 }
@@ -118,8 +118,15 @@ a {
 #encabezado .boton:hover {
     cursor: pointer;
     background: #3CDDF3;
-    color: #1E1E26; 
+    color: #1E1E26;
 }
+/* 
+==============================================
+Main
+==============================================
+*/ 
+#principal {
+    /* Layout */
 
 #principal .boton {
     width: 134px;
@@ -146,8 +153,9 @@ a {
 /* -------------------------------------- */
 #hero {
     margin: 0px 170px 0px 180px;
-    display: inline-flex; 
+    display: inline-flex;
 }
+
 /* -------------------------------------- */
 
 #hero .hero-picture {
@@ -161,7 +169,8 @@ a {
     font-size: 50px;
     font-style: normal;
     font-weight: 700;
-    line-height: 114.6%; /* 57.3px */
+    line-height: 114.6%;
+    /* 57.3px */
     letter-spacing: -1.75px;
     align-self: stretch;
     width: 450px;
@@ -174,13 +183,13 @@ a {
     width: 450px;
     flex-direction: column;
     justify-content: center;
-    align-self: stretch; 
+    align-self: stretch;
     color: #000;
     text-align: right;
     font-size: 16.558px;
     font-style: normal;
     font-weight: 300;
-    line-height: 157.1%; 
+    line-height: 157.1%;
 }
 
 
@@ -202,8 +211,9 @@ a {
 
     /* Typography */
 
-    
+
 }
+
 /* -------------------------------------- */
 
 
@@ -225,7 +235,7 @@ a {
     /* Properties for the flex container */
     /* https://docs.google.com/presentation/d/1-ATTJ0zQartcjxmbNOM-uWh6aYmDdu2kG841ygcngIY/edit#slide=id.gc5e441f28e_0_101 */
     display: flex;
-    
+
     /*
     flex-direction
 
@@ -245,7 +255,7 @@ a {
     the flex-wrap property has no effect.
     */
     /* flex-wrap: wrap; */
-    
+
     /*
     Horizontal
 
@@ -255,8 +265,8 @@ a {
     Si es horizontal, se alinearán en función de la fila. Si es vertical,
     se alinearán en función de la columna.
     */
-    justify-content: center; 
-    
+    justify-content: center;
+
     /* 
     Vertical
 
@@ -267,8 +277,8 @@ a {
     en otras palabras, los ítems ocuparán todo el espacio disponible
     en el cross axis.
     */
-    align-items: space-around; 
-    
+    align-items: space-around;
+
     /* 
     Vertical
     
@@ -286,7 +296,7 @@ a {
     Los valores que admite la propiedad align-content son similares
     a los que podemos utilizar para align-items. Vale la pena probar
     como funcionan ambas propiedades para entenderlas bien.
-    */    
+    */
     /* align-content: space-around;  */
 
     /* Style */
@@ -302,7 +312,8 @@ a {
     text-align: center;
     font-size: 39.214px;
     font-weight: 700;
-    line-height: 156.6%; /* 61.41px */
+    line-height: 156.6%;
+    /* 61.41px */
     letter-spacing: -0.392px;
 }
 
@@ -323,7 +334,7 @@ a {
     /* Properties for the flex container */
     /* https://docs.google.com/presentation/d/1-ATTJ0zQartcjxmbNOM-uWh6aYmDdu2kG841ygcngIY/edit#slide=id.gc5e441f28e_0_101 */
     display: flex;
-    
+
     /*
     flex-direction
 
@@ -343,7 +354,7 @@ a {
     the flex-wrap property has no effect.
     */
     flex-wrap: wrap;
-    
+
     /*
     Horizontal
 
@@ -353,8 +364,8 @@ a {
     Si es horizontal, se alinearán en función de la fila. Si es vertical,
     se alinearán en función de la columna.
     */
-    justify-content: space-around; 
-    
+    justify-content: space-around;
+
     /* 
     Vertical
 
@@ -366,7 +377,7 @@ a {
     en el cross axis.
     */
     /* align-items: flex-end;  */
-    
+
     /* 
     Vertical
     
@@ -384,7 +395,7 @@ a {
     Los valores que admite la propiedad align-content son similares
     a los que podemos utilizar para align-items. Vale la pena probar
     como funcionan ambas propiedades para entenderlas bien.
-    */    
+    */
     /* align-content: space-between;  */
 }
 
@@ -411,7 +422,7 @@ a {
     /* Properties for the flex container */
     /* https://docs.google.com/presentation/d/1-ATTJ0zQartcjxmbNOM-uWh6aYmDdu2kG841ygcngIY/edit#slide=id.gc5e441f28e_0_101 */
     display: flex;
-    
+
     /*
     flex-direction
 
@@ -431,7 +442,7 @@ a {
     the flex-wrap property has no effect.
     */
     flex-wrap: wrap;
-    
+
     /*
     Horizontal
 
@@ -442,7 +453,7 @@ a {
     se alinearán en función de la columna.
     */
     /* justify-content: flex-start;  */
-    
+
     /* 
     Vertical
 
@@ -454,7 +465,7 @@ a {
     en el cross axis.
     */
     /* align-items: flex-end;  */
-    
+
     /* 
     Vertical
     
@@ -472,8 +483,8 @@ a {
     Los valores que admite la propiedad align-content son similares
     a los que podemos utilizar para align-items. Vale la pena probar
     como funcionan ambas propiedades para entenderlas bien.
-    */    
-    align-content: space-around; 
+    */
+    align-content: space-around;
 
     /* Style */
     background: #FAFAFA;
@@ -510,7 +521,8 @@ a {
     color: #3F4868;
     font-size: 16.071px;
     font-weight: 700;
-    line-height: 156.6%; /* 25.168px */
+    line-height: 156.6%;
+    /* 25.168px */
     letter-spacing: -0.161px;
 }
 
@@ -525,7 +537,8 @@ a {
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 156.6%; /* 25.056px */    
+    line-height: 156.6%;
+    /* 25.056px */
 }
 
 #best-of-the-month #boton-best-month {
@@ -543,7 +556,7 @@ a {
     /* Properties for the flex container */
     /* https://docs.google.com/presentation/d/1-ATTJ0zQartcjxmbNOM-uWh6aYmDdu2kG841ygcngIY/edit#slide=id.gc5e441f28e_0_101 */
     display: flex;
-    
+
     /*
     flex-direction
 
@@ -563,7 +576,7 @@ a {
     the flex-wrap property has no effect.
     */
     flex-wrap: wrap;
-    
+
     /*
     Horizontal
 
@@ -573,8 +586,8 @@ a {
     Si es horizontal, se alinearán en función de la fila. Si es vertical,
     se alinearán en función de la columna.
     */
-    justify-content: center; 
-    
+    justify-content: center;
+
     /* 
     Vertical
 
@@ -586,7 +599,7 @@ a {
     en el cross axis.
     */
     /* align-items: stretch;  */
-    
+
     /* 
     Vertical
     
@@ -604,7 +617,7 @@ a {
     Los valores que admite la propiedad align-content son similares
     a los que podemos utilizar para align-items. Vale la pena probar
     como funcionan ambas propiedades para entenderlas bien.
-    */    
+    */
     /* align-content: flex-end;  */
 }
 
@@ -652,11 +665,11 @@ a {
     flex-direction: row;
     flex-wrap: nowrap;
     /* Horizontal */
-    justify-content: flex-start; 
+    justify-content: flex-start;
     /* Vertical */
-    align-items: flex-start; 
+    align-items: flex-start;
     /* Vertical -> contenedores multilínea debemos utilizar align-content */
-    align-content: flex-start; 
+    align-content: flex-start;
 
     /* Style */
     background: #8B48BF;
@@ -676,7 +689,8 @@ a {
     color: #FFF;
     font-size: 40px;
     font-weight: 700;
-    line-height: 119.6%; /* 47.84px */
+    line-height: 119.6%;
+    /* 47.84px */
     letter-spacing: -0.2px;
 }
 
@@ -696,7 +710,7 @@ a {
     width: 134px;
     height: 44px;
     margin-left: 80%;
-    
+
     /* Style */
     border-radius: 50px;
     background: #FFF;
@@ -709,6 +723,7 @@ a {
     font-weight: 500;
     line-height: normal;
 }
+
 /* -------------------------------------- */
 
 
@@ -734,17 +749,17 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     /* Horizontal */
-    justify-content: space-around; 
+    justify-content: space-around;
     /* Vertical */
-    align-items: flex-start; 
+    align-items: flex-start;
     /* Vertical -> contenedores multilínea debemos utilizar align-content */
-    align-content: flex-start; 
+    align-content: flex-start;
 
     /* Style */
     background: #1E1E26;
 }
 
-#pie-de-pagina > section {
+#pie-de-pagina>section {
     /* Layout */
     height: 100%;
     width: 25%;
@@ -774,24 +789,22 @@ a {
 #pie-de-pagina #logo .redes-sociales svg:hover {
     cursor: pointer;
 }
+
 /* -------------------------------------- */
 
 
 /* -------------------------------------- */
 /* Menu */
 /* -------------------------------------- */
-#pie-de-pagina #menu {
+#pie-de-pagina #menu {}
 
-}
 /* -------------------------------------- */
 
 
 /* -------------------------------------- */
 /* Links */
 /* -------------------------------------- */
-#pie-de-pagina #links {
-
-}
+#pie-de-pagina #links {}
 
 #pie-de-pagina #menu li,
 #pie-de-pagina #links li {
@@ -806,6 +819,7 @@ a {
     font-weight: 400;
     line-height: normal;
 }
+
 /* -------------------------------------- */
 
 
@@ -828,11 +842,11 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     /* Horizontal */
-    justify-content: flex-start; 
+    justify-content: flex-start;
     /* Vertical */
-    align-items: flex-start; 
+    align-items: flex-start;
     /* Vertical -> contenedores multilínea debemos utilizar align-content */
-    align-content: flex-start; 
+    align-content: flex-start;
 }
 
 #pie-de-pagina #newsletter .formulario {
@@ -881,6 +895,7 @@ a {
     font-weight: 500;
     line-height: normal;
 }
+
 /* -------------------------------------- */
 
 
@@ -891,9 +906,8 @@ a {
 #best-teams-of-the-year .boton-best-teams .boton:hover,
 #pie-de-pagina #menu a:hover,
 #pie-de-pagina #links a:hover,
-#pie-de-pagina #newsletter .formulario .boton:hover
-#encabezado .boton:hover
-{
+#pie-de-pagina #newsletter .formulario .boton:hover,
+#encabezado .boton:hover {
     /* Layout */
     padding: 12px 0px;
 
