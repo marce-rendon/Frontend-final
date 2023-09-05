@@ -175,6 +175,11 @@ Main
     height: 228px
 }
 
+#hero .live::after {
+    content: "Follow the Telcel Huawei Mexico Open 2022 for free";
+    color: #232C50;
+}
+
 #hero .description {
     display: flex;
     height: 71px;
@@ -248,9 +253,19 @@ Main
     align-items: center;
     align-content: center;
     gap: 24px;
-    background: #FAFAFA;
+    background: #FAFAFA; 
 }
 
+.bullet-container{
+    display:flex;
+    width: 553px;
+    align-items: flex-start;
+    gap: 23px;
+    align-items: center;
+    align-content: center;
+    padding: 40px 0px 40px;
+    margin-top: 985px -1px 1226px -1px;
+}
 .number-bullets{
     padding: 10px 25px;
     justify-content: center;
@@ -259,6 +274,14 @@ Main
     border-radius: 30px;
     background: #8B48BF;
     color: #FFFFFF;
+}
+
+.bullet-subtitle {
+    height: 158px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 18px;
 }
 /* -------------------------------------- */
 
@@ -738,11 +761,6 @@ Main
     line-height: 119.6%;
     /* 47.84px */
     letter-spacing: -0.2px;
-}
-
-#best-teams-of-the-year .leyenda .get-the-best::after {
-    content: " (2023)";
-    color: red;
 }
 
 #best-teams-of-the-year .boton-best-teams {
