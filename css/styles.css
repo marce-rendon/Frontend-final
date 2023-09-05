@@ -120,14 +120,12 @@ a {
     background: #3CDDF3;
     color: #1E1E26;
 }
+
 /* 
 ==============================================
 Main
 ==============================================
 */ 
-#principal {
-    /* Layout */
-
 #principal .boton {
     width: 134px;
     height: 44px;
