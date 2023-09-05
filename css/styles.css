@@ -125,17 +125,25 @@ a {
 ==============================================
 Main
 ==============================================
-*/
-#principal {
-    /* Layout */
+*/ 
+#principal .boton {
+    width: 134px;
+    height: 44px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    background: #8B48BF;
+    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    position: sticky;
+}
 
-
-    /* Style */
-
-
-    /* Typography */
-
-
+#principal .boton:hover {
+    cursor: pointer;
+    background: #3CDDF3;
+    color: #1E1E26; 
 }
 
 /* -------------------------------------- */
@@ -182,6 +190,10 @@ Main
     line-height: 157.1%;
 }
 
+
+.align-right{
+    text-align: right;
+}
 
 
 
