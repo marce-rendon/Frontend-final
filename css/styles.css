@@ -213,6 +213,9 @@ Main
     padding: 40px 0px;
     justify-content: center;
     align-items: center;
+background-color: #8B48BF; 
+    height: 168px;
+    gap: 100px;
     background-color: #8B48BF; 
     height: 168px;
     gap: 100px;
@@ -252,9 +255,10 @@ Main
     padding: 40px 0px;
     flex-direction: row;
     align-items: center;
+    align-content: center;
     gap: 24px;
-    background: #FAFAFA;
-    width: Fixed (1,440px);
+    background: #FAFAFA; 
+width: Fixed (1,440px);
     height: Hug (428px);
     top: 985px;
     left: -1px;
@@ -264,7 +268,7 @@ Main
 
 .pro-skills-row{
     display: flex;
-    justify-content: space-around;
+justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -318,6 +322,16 @@ Main
     background: #8B48BF;
     color: #FFFFFF;
 }
+
+.bullet-subtitle {
+    height: 158px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 18px;
+}
+/* -------------------------------------- */
+
 
 /* -------------------------------------- */
 /* Best of the month */
@@ -1070,7 +1084,7 @@ Main
     width: 100%;
     border: yellow solid 5px;
 }
-    
+
 
 /* -------------------------------------- */
 /* Logo */
