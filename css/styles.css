@@ -757,9 +757,6 @@ Main
 }
 
 /* -------------------------------------- */
-
-
-/* -------------------------------------- */
 /* Get to know the best teams of the year */
 /* -------------------------------------- */
 #best-teams-of-the-year {
@@ -904,7 +901,7 @@ Main
 #pie-de-pagina #menu-links {
     width: 60%;
     display: flex;
-
+    
 }
 
 #pie-de-pagina #menu-links #menu {
@@ -1089,169 +1086,169 @@ Main
                     /* padding: 0; */
                 }
 
-                body {
-                    background-color: lightblue;
-                }
+    body {
+        background-color: lightblue;
+    }
 
-
-                /* ============================================== */
-                /* Footer */
-                /* ============================================== */
-                #pie-de-pagina {
-                    /* Layout */
-                    height: 455px;
-                    padding: 40px 0;
-
-                    /* padding-left: 10%;
+/* ============================================== */
+/* Footer */
+/* ============================================== */
+#pie-de-pagina {
+    /* Layout */
+    height: 455px;
+    padding: 40px 0;
+    
+    /* padding-left: 10%;
     padding-right: 10%;
     padding-top: 56px;
     padding-bottom: 43px; */
-                    /* Properties for the flex container */
-                    /* display: flex; */
-                    flex-direction: column-reverse;
-                    /* flex-wrap: wrap; */
-                    /* Horizontal */
-                    /* justify-content: flex-end; */
-                    /* Vertical */
-                    /* align-items: flex-end; */
-                    /* Vertical -> contenedores multilínea debemos utilizar align-content */
-                    /* align-content: flex-start; */
-                }
+    /* Properties for the flex container */
+    /* display: flex; */
+    flex-direction: column-reverse;
+    /* flex-wrap: wrap; */
+    /* Horizontal */
+    /* justify-content: flex-end; */
+    /* Vertical */
+    /* align-items: flex-end; */
+    /* Vertical -> contenedores multilínea debemos utilizar align-content */
+    /* align-content: flex-start; */
+}
 
-                #pie-de-pagina>section {
-                    /* height: 33.3333%; */
-                    width: 100%;
-                    border: yellow solid 5px;
-                }
+#pie-de-pagina>section {
+    /* height: 33.3333%; */
+    width: 100%;
+    border: yellow solid 5px;
+}
 
 
-                /* -------------------------------------- */
-                /* Logo */
-                /* -------------------------------------- */
-                #pie-de-pagina #logo {
-                    display: flex;
-                    flex-direction: column-reverse;
-                    justify-content: space-between;
-                }
+/* -------------------------------------- */
+/* Logo */
+/* -------------------------------------- */
+#pie-de-pagina #logo {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
 
-                #pie-de-pagina #logo .sportit {
-                    margin-bottom: 10px;
-                }
+#pie-de-pagina #logo .sportit {
+    margin-bottom: 10px;
+}
 
-                #pie-de-pagina #logo .logo svg {
-                    /* width: 107.684px;
+#pie-de-pagina #logo .logo svg {
+    /* width: 107.684px;
     height: 25px; */
-                }
+}
 
-                #pie-de-pagina #logo .redes-sociales svg {
-                    /* width: 20px;
+#pie-de-pagina #logo .redes-sociales svg {
+    /* width: 20px;
     height: 20px; */
-                    margin-left: 30px;
-                    margin-right: 30px;
-                }
+    margin-left: 30px;
+    margin-right: 30px;
+}
 
-                #pie-de-pagina #logo .redes-sociales svg:hover {
-                    /* cursor: pointer; */
-                }
-
-                /* -------------------------------------- */
-
-
-                /* -------------------------------------- */
-                /* Menu */
-                /* -------------------------------------- */
-                #pie-de-pagina #menu {}
-
-                /* -------------------------------------- */
+#pie-de-pagina #logo .redes-sociales svg:hover {
+    /* cursor: pointer; */
+}
+/* -------------------------------------- */
 
 
-                /* -------------------------------------- */
-                /* Links */
-                /* -------------------------------------- */
-                #pie-de-pagina #links {}
+/* -------------------------------------- */
+/* Menu */
+/* -------------------------------------- */
+#pie-de-pagina #menu {}
 
-                #pie-de-pagina #menu li,
-                #pie-de-pagina #links li {
-                    /* padding-bottom: 12px; */
-                }
+/* -------------------------------------- */
 
-                #pie-de-pagina #menu a:link,
-                #pie-de-pagina #links a:link {
-                    /* color: #FFF;
+    #pie-de-pagina #menu-links #links {
+        /* margin-left: 10px; */
+    }
+
+/* -------------------------------------- */
+/* Links */
+/* -------------------------------------- */
+#pie-de-pagina #links {}
+
+#pie-de-pagina #menu li,
+#pie-de-pagina #links li {
+    /* padding-bottom: 12px; */
+}
+
+#pie-de-pagina #menu a:link,
+#pie-de-pagina #links a:link {
+    /* color: #FFF;
     font-weight: 400;
     line-height: normal; */
-                }
+}
+/* -------------------------------------- */
 
-                /* -------------------------------------- */
 
-
-                /* -------------------------------------- */
-                /* Newsletter */
-                /* -------------------------------------- */
-                #pie-de-pagina #newsletter {
-                    padding: 3% 50px 3%;
-                    /* display: flex;
+/* -------------------------------------- */
+/* Newsletter */
+/* -------------------------------------- */
+#pie-de-pagina #newsletter {
+    padding: 3% 50px 3%;
+    /* display: flex;
     flex-direction: row;
     flex-wrap: wrap; */
-                    /* Horizontal */
-                    /* justify-content: flex-start; */
-                    /* Vertical */
-                    /* align-items: flex-start; */
-                    /* Vertical -> contenedores multilínea debemos utilizar align-content */
-                    /* align-content: flex-start; */
-                }
+    /* Horizontal */
+    /* justify-content: flex-start; */
+    /* Vertical */
+    /* align-items: flex-start; */
+    /* Vertical -> contenedores multilínea debemos utilizar align-content */
+    /* align-content: flex-start; */
+}
 
-                #pie-de-pagina #newsletter .formulario {
-                    width: 100%;
-                    margin-bottom: 10px;
-                }
+#pie-de-pagina #newsletter .formulario {
+    width: 100%;
+    margin-bottom: 10px;
+}
 
-                #pie-de-pagina #newsletter .formulario .email {
-                    width: 70%;
-                    /* height: 44px; */
-                    /* padding-left: 10px; */
+#pie-de-pagina #newsletter .formulario .email {
+    width: 70%;
+    /* height: 44px; */
+    /* padding-left: 10px; */
 
-                    /* border-radius: 50px;
+    /* border-radius: 50px;
     background: #FFF; */
 
-                    /* color: #A0A0A0;
+    /* color: #A0A0A0;
     font-size: 13.181px;
     font-weight: 600;
     line-height: normal; */
-                }
+}
 
-                #pie-de-pagina #newsletter .formulario .boton {
+#pie-de-pagina #newsletter .formulario .boton {
 
-                    width: 20%;
-                    /* height: 44px;
+    width: 20%;
+    /* height: 44px;
     margin-left: 9px;
 
 
-    border-radius: 50px;
-    background: #8B48BF;
+        border-radius: 50px;
+        background: #8B48BF;
 
 
     color: #FFF;
     font-size: 13.181px;
     font-weight: 500;
     line-height: normal; */
-                }
+}
 
-                #pie-de-pagina #newsletter .copyright {
-
-                    /* color: #8C8C94;
+#pie-de-pagina #newsletter .copyright {
+   
+    /* color: #8C8C94;
     font-size: 12.5px;
     font-weight: 500;
     line-height: normal; */
-                }
+}
 
-                /* -------------------------------------- */
-
-
+/* -------------------------------------- */
 
 
 
 
 
 
-            }
+
+
+  }
