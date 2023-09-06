@@ -213,13 +213,14 @@ Main
     padding: 40px 0px;
     justify-content: center;
     align-items: center;
-    gap: 100px;
     background-color: #8B48BF; 
+    height: 168px;
+    gap: 100px;
 }
 
 .pro-title {
     display: flex;
-    width: 450px;
+    width: 460px;
     height: 88px;
     flex-direction: column;
     justify-content: center;
@@ -245,28 +246,70 @@ Main
     line-height: 151.1%;
 }
 
-.pro-container {
+.pro-skills-container{
     display: flex;
     width: 1440px;
     padding: 40px 0px;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    align-content: center;
     gap: 24px;
-    background: #FAFAFA; 
+    background: #FAFAFA;
+    width: Fixed (1,440px);
+    height: Hug (428px);
+    top: 985px;
+    left: -1px;
+    padding: 40px 0px 40px 0px;
+    gap: 24px;
 }
 
-.bullet-container{
-    display:flex;
-    width: 553px;
-    align-items: flex-start;
-    gap: 23px;
-    align-items: center;
-    align-content: center;
-    padding: 40px 0px 40px;
-    margin-top: 985px -1px 1226px -1px;
+.pro-skills-row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
-.number-bullets{
+
+.pro-skills-frame{
+    width: 553px;
+    display: flex;
+    color: #B3B2B7;
+    margin-bottom: 24px;
+}
+
+.pro-skills-frame-bottom{
+    width: 553px;
+    display: flex;
+    color: #B3B2B7;
+    margin-bottom: 24px;
+    margin-top: 24px;
+}
+
+.right-column span{
+    color: #323851;
+    padding-bottom: 1.5rem;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.24px;
+    width: 228px;
+    height: 23px;
+}
+
+.right-column p{
+    color: #B3B2B7;
+    font-size: 16.298px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 156.6%; /* 25.523px */
+    letter-spacing: -0.163px;
+    margin-top: 18px;
+}
+
+.left-column {
+    margin-right: 23px;
+}
+
+.number-button{
     padding: 10px 25px;
     justify-content: center;
     align-items: center;
@@ -275,16 +318,6 @@ Main
     background: #8B48BF;
     color: #FFFFFF;
 }
-
-.bullet-subtitle {
-    height: 158px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 18px;
-}
-/* -------------------------------------- */
-
 
 /* -------------------------------------- */
 /* Best of the month */
