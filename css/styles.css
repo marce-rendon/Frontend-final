@@ -40,7 +40,7 @@ https://codepen.io/enxaneta/full/adLPwv/
     /* Layout */
     box-sizing: border-box;
     /* Ancho máximo para desktop */
-    max-width: 1440px;
+    /*max-width: 1440px;*/
     margin: 0 auto;
     padding: 0;
 
@@ -57,6 +57,7 @@ ul {
     /* Style */
     list-style-type: none;
 }
+
 
 a {
     /* Style */
@@ -87,18 +88,41 @@ a {
     font-style: normal;
     font-weight: 500;
     line-height: 176.1%;
-    /* 22.893px */
+    list-style-type: none;
 }
+
+.menu-icon {
+    display: none; 
+    cursor: pointer;
+}
+
 
 .menu ul li {
     display: inline-flex;
     padding-right: 28px;
 }
 
-/* .menu ul li:hover {
-    cursor: pointer;
-    text-decoration: underline;
-} */
+@media screen and (max-width: 480px) {
+    .menu ul {
+        display: none; 
+        position: relative;
+    }
+
+    .menu-container-mobile {
+        gap: 200px; 
+        justify-content: center;
+        align-items: center;
+        display: inline-flex;
+        margin-top: 40px;
+        margin-right: 56px;
+        margin-left: 56px;
+    }
+    .menu-icon {
+        display: inline-block; 
+        width: 107.684px;
+        height: 25px;
+    }
+}
 
 #encabezado .boton {
     display: flex;
@@ -115,17 +139,12 @@ a {
     position: relative;
 }
 
-/* #encabezado .boton:hover {
-    cursor: pointer;
-    background: #3CDDF3;
-    color: #1E1E26;
-} */
+@media screen and (max-width: 480px) {
+    #encabezado .boton {
+        display: none;
+    }
+}
 
-/* 
-==============================================
-Main
-==============================================
-*/
 #principal .boton {
     width: 134px;
     height: 44px;
@@ -140,18 +159,10 @@ Main
     position: sticky;
 }
 
-/* #principal .boton:hover {
-    cursor: pointer;
-    background: #3CDDF3;
-    color: #1E1E26; 
-} */
-
-/* -------------------------------------- */
-/* Hero */
-/* -------------------------------------- */
 #hero {
     margin: 0px 170px 0px 180px;
     display: inline-flex;
+    flex-wrap: wrap;
 }
 
 /* -------------------------------------- */
@@ -161,6 +172,13 @@ Main
     height: 461.07px;
 }
 
+@media screen and (max-width: 480px) {
+    #hero .hero-picture {
+        width: 400px;
+        height: auto;
+    }
+}
+
 #hero .live {
     color: #232C50;
     text-align: right;
@@ -168,11 +186,27 @@ Main
     font-style: normal;
     font-weight: 700;
     line-height: 114.6%;
-    /* 57.3px */
     letter-spacing: -1.75px;
     align-self: stretch;
     width: 450px;
-    height: 228px
+    height: 228px;
+}
+
+@media screen and (max-width: 480px) {
+    #hero .live {
+        text-align: center; 
+        align-self: auto; 
+        width: auto; 
+        height: auto; 
+        color: #232C50;
+        text-align: right;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 114.6%; 
+        letter-spacing: -1.75px;
+        align-self: stretch;
+    }
 }
 
 #hero .live::after {
@@ -202,11 +236,6 @@ Main
     text-align: right;
 }
 
-
-
-/* -------------------------------------- */
-/* What´s different between pros? */
-/* -------------------------------------- */
 #pros .pro-banner {
     display: flex;
     width: 100%;
@@ -1235,7 +1264,7 @@ Main
 }
 
 #pie-de-pagina #newsletter .copyright {
-   
+
     /* color: #8C8C94;
     font-size: 12.5px;
     font-weight: 500;
@@ -1251,4 +1280,4 @@ Main
 
 
 
-  }
+}
