@@ -833,7 +833,7 @@ a {
 #best-teams-of-the-year .leyenda {
     /* Layout */
     height: 100%;
-    width: 50%;
+    width: 45%;
 }
 
 #best-teams-of-the-year .leyenda .get-the-best {
@@ -849,6 +849,10 @@ a {
     letter-spacing: -0.2px;
 }
 
+#best-teams-of-the-year .leyenda .text-mobile {
+    display: none;
+}
+
 #best-teams-of-the-year .boton-best-teams {
     /* Layout */
     height: 100%;
@@ -859,7 +863,7 @@ a {
     /* Layout */
     width: 134px;
     height: 44px;
-    margin-left: 80%;
+    margin-left: 70%;
 
     /* Style */
     border-radius: 50px;
@@ -1120,6 +1124,68 @@ a {
         background-color: lightblue;
     }
 
+    /* -------------------------------------- */
+    /* Get to know the best teams of the year */
+    /* -------------------------------------- */
+    #best-teams-of-the-year {
+        background: #3CDDF3;
+        height: 366px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    #best-teams-of-the-year .leyenda {
+        width: 100%;
+        height: 192px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    #best-teams-of-the-year .leyenda .get-the-best {
+        width: 324px;
+        color: #FFF;
+        text-align: center;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 119.6%; /* 47.84px */
+        letter-spacing: -0.2px;
+    }
+
+    #best-teams-of-the-year .leyenda .text-desktop {
+        display: none;
+    }
+
+    #best-teams-of-the-year .leyenda .text-mobile {
+        display: inline;
+    }
+
+    #best-teams-of-the-year .boton-best-teams {
+        display: flex;
+        width: 134px;
+        height: 44px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #best-teams-of-the-year .boton-best-teams .boton {
+        margin: 0;
+        color: #FFF;
+        font-size: 13.181px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        border-radius: 50px;
+        background: #232C50;
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+    }
+
     /* ============================================== */
     /* Footer */
     /* ============================================== */
@@ -1151,7 +1217,6 @@ a {
         margin-top: 10px;
         margin-bottom: 10px;
     }
-
 
     /* -------------------------------------- */
     /* Logo */
