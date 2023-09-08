@@ -113,10 +113,12 @@ a {
         justify-content: center;
         align-items: center;
         display: inline-flex;
-        margin-top: 40px;
-        margin-right: 56px;
-        margin-left: 56px;
+        margin-top: 2.5rem;
+        margin-bottom: 4rem;
+        margin-right: auto;
+        margin-left: auto;
     }
+
     .menu-icon {
         display: inline-block; 
         width: 107.684px;
@@ -167,15 +169,18 @@ a {
 
 /* -------------------------------------- */
 
-#hero .hero-picture {
+#hero .hero-picture img{
     width: 540px;
     height: 461.07px;
 }
 
 @media screen and (max-width: 480px) {
-    #hero .hero-picture {
+    #hero .hero-picture img {
         width: 400px;
         height: auto;
+        margin-right: 2.5rem;
+        margin-left: 2.5rem;
+        margin-bottom: 6.25rem;
     }
 }
 
@@ -196,7 +201,7 @@ a {
     #hero .live {
         text-align: center; 
         align-self: auto; 
-        width: auto; 
+        width: 8rem; 
         height: auto; 
         color: #232C50;
         text-align: right;
@@ -212,6 +217,13 @@ a {
 #hero .live::after {
     content: "Follow the Telcel Huawei Mexico Open 2022 for free";
     color: #232C50;
+}
+
+@media screen and (max-width: 480px) {
+    #hero .hero-description {
+        margin-right: 2.5rem;
+        margin-left: 2.5rem;
+    }
 }
 
 #hero .description {
