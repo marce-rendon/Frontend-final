@@ -417,9 +417,8 @@ a {
 /* -------------------------------------- */
 
 
-/* -------------------------------------- */
+
 /* Best of the month */
-/* -------------------------------------- */
 #best-of-the-month {
     /* Layout */
     height: 800px;
@@ -839,9 +838,7 @@ a {
     line-height: normal;
 }
 
-/* -------------------------------------- */
 /* Get to know the best teams of the year */
-/* -------------------------------------- */
 #best-teams-of-the-year {
     /* Layout */
     height: 224px;
@@ -920,9 +917,7 @@ a {
     line-height: normal;
 }
 
-/* ============================================== */
 /* Footer */
-/* ============================================== */
 #pie-de-pagina {
     /* Layout */
     height: 247px;
@@ -952,9 +947,7 @@ a {
     background: #1E1E26;
 }
 
-/* -------------------------------------- */
 /* Logo */
-/* -------------------------------------- */
 #pie-de-pagina #logo {
     width: 15%;
 }
@@ -982,9 +975,7 @@ a {
     cursor: pointer;
 }
 
-/* -------------------------------------- */
 /* Menu, Links */
-/* -------------------------------------- */
 #pie-de-pagina #menu-links {
     width: 60%;
     display: flex;
@@ -1013,9 +1004,7 @@ a {
     line-height: normal;
 }
 
-/* -------------------------------------- */
 /* Newsletter */
-/* -------------------------------------- */
 #pie-de-pagina #newsletter {
     /* Layout */
     width: 25%;
@@ -1087,9 +1076,7 @@ a {
     line-height: normal;
 }
 
-/* -------------------------------------- */
 /* hover | Botones, menus, links */
-/* -------------------------------------- */
 #encabezado .boton:hover,
 #encabezado .menu a:hover,
 #principal .boton:hover,
@@ -1118,10 +1105,12 @@ a {
     text-decoration: none;
 }
 
+#pie-de-pagina #newsletter .formulario .email:focus {
+    background: #3CDDF3;
+}
 
-/* -------------------------------------- */
+
 /* Mobile: 480px */
-/* -------------------------------------- */
 @media only screen and (max-width: 480px) {
 
     * {
@@ -1158,13 +1147,108 @@ a {
 
     }
 
-    body {
-        background-color: lightblue;
+    /* Best of the month */
+    #best-of-the-month {
+        height: 594px;
+        /*display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-around;
+        background: #FFF; */
     }
 
-    /* -------------------------------------- */
+    #best-of-the-month h2 {
+        /* margin: 0;
+        color: #242E53;
+        text-align: center;
+        font-size: 39.214px;
+        font-weight: 700;
+        line-height: 156.6%;
+        letter-spacing: -0.392px; */
+    }
+
+    #best-of-the-month #tarjetas {
+        /* margin-left: 0;
+        margin-right: 0;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around; */
+    }
+
+    #best-of-the-month #tarjetas .contenido {
+        /* width: 420px;
+        height: 260px;
+        margin: 0;
+        padding-top: 50px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+        background: #FAFAFA;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        position: relative; */
+    }
+
+    #best-of-the-month #tarjetas .contenido.sanyo,
+    #best-of-the-month #tarjetas .contenido.navarro
+    {
+        display: none;
+    }
+
+    #best-of-the-month #tarjetas .contenido .avatar {
+        /* position: absolute;
+        left: 42%;
+        top: -18%; */
+    }
+
+    #best-of-the-month #tarjetas .contenido .nombre {
+        /* width: 100%;
+        margin: 0;
+        text-align: center;
+        color: #3F4868;
+        font-size: 16.071px;
+        font-weight: 700;
+        line-height: 156.6%;
+        letter-spacing: -0.161px; */
+    }
+
+    #best-of-the-month #tarjetas .contenido .descripcion {
+        /* width: 100%;
+        margin: 0;
+        color: #B9B9C1;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 156.6%; */
+    }
+
+    #best-of-the-month #boton-best-month {
+        /* margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; */
+    }
+
+    #best-of-the-month .boton {
+        /* width: 134px;
+        height: 44px;
+        margin: 0;
+        border-radius: 50px;
+        background: rgba(139, 72, 191, 0.70);
+        color: #FFF;
+        font-size: 13.181px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal; */
+    }
+
     /* Get to know the best teams of the year */
-    /* -------------------------------------- */
     #best-teams-of-the-year {
         background: #3CDDF3;
         height: 366px;
@@ -1224,9 +1308,7 @@ a {
         box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
     }
 
-    /* ============================================== */
     /* Footer */
-    /* ============================================== */
     #pie-de-pagina {
         /* Layout */
         height: 455px;
@@ -1256,9 +1338,7 @@ a {
         margin-bottom: 10px;
     }
 
-    /* -------------------------------------- */
     /* Logo */
-    /* -------------------------------------- */
     #pie-de-pagina #logo {
         width: 100%;
         display: flex;
@@ -1287,9 +1367,7 @@ a {
         /* cursor: pointer; */
     }
 
-    /* -------------------------------------- */
     /* Menu, Links */
-    /* -------------------------------------- */
     #pie-de-pagina #menu-links {
         width: 100%;
         display: flex;
@@ -1317,9 +1395,7 @@ a {
         line-height: normal; */
     }
 
-    /* -------------------------------------- */
     /* Newsletter */
-    /* -------------------------------------- */
     #pie-de-pagina #newsletter {
         width: 100%;
         padding: 3% 30px 3%;
