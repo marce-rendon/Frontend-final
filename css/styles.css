@@ -1,72 +1,23 @@
-/* 
-# Guía de estilo de front-end
 
-## Diseño
-
-Los diseños se crearon con los siguientes anchos:
-- Mobile: 480px
-- Desktop: 1440px
-
-## Colores
-
-### Primario
-Violeta: #8B48BF
-Celeste brillante: #3CDDF3
-
-### Neutro
-Azul grisáceo oscuro: #1E1E26
-Azul muy oscuro: #232851
-Variante gris claro: rgb (249, 249, 249)
-
-## Tipografia
-
-### Body Copy
-- Font size: 16px
-
-### Font
-- Family: [Be Vietnam Pro](https://fonts.google.com/specimen/Be+Vietnam+Pro)
-- Weights: 400, 500, 700
-
-## Icons
-Para los íconos sociales, puede usar los íconos provistos o una biblioteca de íconos de fuentes. Ej:
-
-- [Font Awesome](https://fontawesome.com)
-
-## Properties for the flex container
-## Properties for the flex items
-https://codepen.io/enxaneta/full/adLPwv/
-*/
 * {
-    /* Layout */
     box-sizing: border-box;
-    /* Ancho máximo para desktop */
-    /* max-width: 1440px; */
     margin: 0 auto;
     padding: 0;
-
-    /* Typography */
     font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 16px;
     font-style: normal;
 }
 
 ul {
-    /* Layout */
     margin: 0;
-
-    /* Style */
     list-style-type: none;
 }
 
 
 a {
-    /* Style */
     text-decoration: none;
 }
 
-/* ============================================== */
-/* Header */
-/* ============================================== */
 #encabezado {
     display: inline-flex;
     text-align: center;
@@ -76,8 +27,6 @@ a {
 }
 
 .logo-encabezado {}
-
-/* -------------------------------------- */
 
 .menu a {
     justify-content: center;
@@ -152,8 +101,6 @@ a {
     display: inline-flex;
     flex-wrap: wrap;
 }
-
-/* -------------------------------------- */
 
 #hero .hero-picture img{
     width: 540px;
@@ -489,199 +436,41 @@ a {
         padding: 10px;  
         width: 428px;  
         margin: 0;
-    }
-
-
-    
+    }   
 }
 
-/* -------------------------------------- */
-
-
-
-/* Best of the month */
 #best-of-the-month {
-    /* Layout */
     height: 800px;
-    /* ----------------------------------------------------
-    Flex container
-    #best-of-the-month
-
-    Flex items del flex container
-    h2
-    #tarjetas
-    #boton-best-month
-    ---------------------------------------------------- */
-    /* Properties for the flex container */
-    /* https://docs.google.com/presentation/d/1-ATTJ0zQartcjxmbNOM-uWh6aYmDdu2kG841ygcngIY/edit#slide=id.gc5e441f28e_0_101 */
     display: flex;
-
-    /*
-    flex-direction
-
-    Los ítems se disponen en el eje x, de izquierda a derecha.
-    Si no le aclaramos la propiedad flex-direction al contenedor,
-    row es el valor por defecto.
-    */
     flex-direction: column;
-
-    /*
-    https://www.w3schools.com/cssref/css3_pr_flex-wrap.php
-
-    The flex-wrap property specifies whether the flexible items
-    should wrap or not.
-
-    Note: If the elements are not flexible items,
-    the flex-wrap property has no effect.
-    */
-    /* flex-wrap: wrap; */
-
-    /*
-    Horizontal
-
-    justify-content
-    
-    Con esta propiedad alineamos los ítems a lo largo del main axis.
-    Si es horizontal, se alinearán en función de la fila. Si es vertical,
-    se alinearán en función de la columna.
-    */
     justify-content: center;
-
-    /* 
-    Vertical
-
-    align-items
-
-    Con esta propiedad alineamos los ítems a lo largo del cross axis.
-    Si no aclaramos esta propiedad, el valor por defecto es stretch,
-    en otras palabras, los ítems ocuparán todo el espacio disponible
-    en el cross axis.
-    */
     align-items: space-around;
-
-    /* 
-    Vertical
-    
-    align-content 
-    
-    Si tenemos un contenedor de una sola línea (donde flex-flow se
-    establece como no-wrap) utilizaremos align-items, pero en el caso
-    de que estemos trabajando con contenedores multilínea debemos
-    utilizar align-content.
-
-    Con esta propiedad alineamos los ítems a lo largo del cross axis
-    cuando los contenedores flexibles incluyen de varias líneas
-    (donde flex-flow se establece en wrap o wrap-reverse).
-
-    Los valores que admite la propiedad align-content son similares
-    a los que podemos utilizar para align-items. Vale la pena probar
-    como funcionan ambas propiedades para entenderlas bien.
-    */
-    /* align-content: space-around;  */
-
-    /* Style */
     background: #FFF;
 }
 
 #best-of-the-month h2 {
-    /* Layout */
     margin: 0;
-
-    /* Typography */
     color: #242E53;
     text-align: center;
     font-size: 39.214px;
     font-weight: 700;
     line-height: 156.6%;
-    /* 61.41px */
     letter-spacing: -0.392px;
 }
 
 #best-of-the-month #tarjetas {
-    /* Layout */
-    /* Cancela el margin 0 auto que centra la página web */
+
     margin-left: 0;
     margin-right: 0;
     margin-top: 100px;
     margin-bottom: 50px;
-    /* ----------------------------------------------------
-    Flex container
-    #tarjetas
-
-    Flex items del flex container
-    .contenido
-    ---------------------------------------------------- */
-    /* Properties for the flex container */
-    /* https://docs.google.com/presentation/d/1-ATTJ0zQartcjxmbNOM-uWh6aYmDdu2kG841ygcngIY/edit#slide=id.gc5e441f28e_0_101 */
     display: flex;
-
-    /*
-    flex-direction
-
-    Los ítems se disponen en el eje x, de izquierda a derecha.
-    Si no le aclaramos la propiedad flex-direction al contenedor,
-    row es el valor por defecto.
-    */
     flex-direction: row;
-
-    /*
-    https://www.w3schools.com/cssref/css3_pr_flex-wrap.php
-
-    The flex-wrap property specifies whether the flexible items
-    should wrap or not.
-
-    Note: If the elements are not flexible items,
-    the flex-wrap property has no effect.
-    */
     flex-wrap: wrap;
-
-    /*
-    Horizontal
-
-    justify-content
-    
-    Con esta propiedad alineamos los ítems a lo largo del main axis.
-    Si es horizontal, se alinearán en función de la fila. Si es vertical,
-    se alinearán en función de la columna.
-    */
     justify-content: space-around;
-
-    /* 
-    Vertical
-
-    align-items
-
-    Con esta propiedad alineamos los ítems a lo largo del cross axis.
-    Si no aclaramos esta propiedad, el valor por defecto es stretch,
-    en otras palabras, los ítems ocuparán todo el espacio disponible
-    en el cross axis.
-    */
-    /* align-items: flex-end;  */
-
-    /* 
-    Vertical
-    
-    align-content 
-    
-    Si tenemos un contenedor de una sola línea (donde flex-flow se
-    establece como no-wrap) utilizaremos align-items, pero en el caso
-    de que estemos trabajando con contenedores multilínea debemos
-    utilizar align-content.
-
-    Con esta propiedad alineamos los ítems a lo largo del cross axis
-    cuando los contenedores flexibles incluyen de varias líneas
-    (donde flex-flow se establece en wrap o wrap-reverse).
-
-    Los valores que admite la propiedad align-content son similares
-    a los que podemos utilizar para align-items. Vale la pena probar
-    como funcionan ambas propiedades para entenderlas bien.
-    */
-    /* align-content: space-between;  */
 }
 
 #best-of-the-month #tarjetas .contenido {
-    /* Layout */
-    /* width: 31.5%; */
     width: 420px;
     height: 260px;
     margin: 0;
@@ -689,229 +478,56 @@ a {
     padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
-
-    /* ----------------------------------------------------
-    Flex container
-    .contenido
-
-    Flex items del flex container
-    .avatar
-    .nombre
-    .descripcion
-    ---------------------------------------------------- */
-    /* Properties for the flex container */
-    /* https://docs.google.com/presentation/d/1-ATTJ0zQartcjxmbNOM-uWh6aYmDdu2kG841ygcngIY/edit#slide=id.gc5e441f28e_0_101 */
     display: flex;
-
-    /*
-    flex-direction
-
-    Los ítems se disponen en el eje x, de izquierda a derecha.
-    Si no le aclaramos la propiedad flex-direction al contenedor,
-    row es el valor por defecto.
-    */
-    /* flex-direction: row; */
-
-    /*
-    https://www.w3schools.com/cssref/css3_pr_flex-wrap.php
-
-    The flex-wrap property specifies whether the flexible items
-    should wrap or not.
-
-    Note: If the elements are not flexible items,
-    the flex-wrap property has no effect.
-    */
     flex-wrap: wrap;
-
-    /*
-    Horizontal
-
-    justify-content
-    
-    Con esta propiedad alineamos los ítems a lo largo del main axis.
-    Si es horizontal, se alinearán en función de la fila. Si es vertical,
-    se alinearán en función de la columna.
-    */
-    /* justify-content: flex-start;  */
-
-    /* 
-    Vertical
-
-    align-items
-
-    Con esta propiedad alineamos los ítems a lo largo del cross axis.
-    Si no aclaramos esta propiedad, el valor por defecto es stretch,
-    en otras palabras, los ítems ocuparán todo el espacio disponible
-    en el cross axis.
-    */
-    /* align-items: flex-end;  */
-
-    /* 
-    Vertical
-    
-    align-content 
-    
-    Si tenemos un contenedor de una sola línea (donde flex-flow se
-    establece como no-wrap) utilizaremos align-items, pero en el caso
-    de que estemos trabajando con contenedores multilínea debemos
-    utilizar align-content.
-
-    Con esta propiedad alineamos los ítems a lo largo del cross axis
-    cuando los contenedores flexibles incluyen de varias líneas
-    (donde flex-flow se establece en wrap o wrap-reverse).
-
-    Los valores que admite la propiedad align-content son similares
-    a los que podemos utilizar para align-items. Vale la pena probar
-    como funcionan ambas propiedades para entenderlas bien.
-    */
     align-content: space-around;
-
-    /* Style */
     background: #FAFAFA;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-
-    /*
-    position relative + position absolute
-    Si nuestras cajas (hijas) están dentro de otra caja (padre), el punto de referencia seguirá siendo el body a menos que hagamos relativa la posición de su padre.
-    ¿Cuándo se suele utilizar?
-    Cuando queremos sacar un elemento del flujo normal y posicionarlo en un punto fijo con respecto a su contenedor o el body.
-    */
     position: relative;
 }
 
 #best-of-the-month #tarjetas .contenido .avatar {
-    /*
-    position relative + position absolute
-    Si nuestras cajas (hijas) están dentro de otra caja (padre), el punto de referencia seguirá siendo el body a menos que hagamos relativa la posición de su padre.
-    ¿Cuándo se suele utilizar?
-    Cuando queremos sacar un elemento del flujo normal y posicionarlo en un punto fijo con respecto a su contenedor o el body.
-    */
     position: absolute;
     left: 42%;
     top: -18%;
 }
 
 #best-of-the-month #tarjetas .contenido .nombre {
-    /* Layout */
     width: 100%;
     margin: 0;
-
-    /* Typography */
     text-align: center;
     color: #3F4868;
     font-size: 16.071px;
     font-weight: 700;
     line-height: 156.6%;
-    /* 25.168px */
     letter-spacing: -0.161px;
 }
 
 #best-of-the-month #tarjetas .contenido .descripcion {
-    /* Layout */
     width: 100%;
     margin: 0;
-
-    /* Typography */
     color: #B9B9C1;
     text-align: center;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 156.6%;
-    /* 25.056px */
 }
 
 #best-of-the-month #boton-best-month {
-    /* Layout */
-    /* Cancela el margin 0 auto que centra la página web */
     margin: 0;
-
-    /* ----------------------------------------------------
-    Flex container
-    #boton-best-month
-
-    Flex items del flex container
-    .boton
-    ---------------------------------------------------- */
-    /* Properties for the flex container */
-    /* https://docs.google.com/presentation/d/1-ATTJ0zQartcjxmbNOM-uWh6aYmDdu2kG841ygcngIY/edit#slide=id.gc5e441f28e_0_101 */
     display: flex;
-
-    /*
-    flex-direction
-
-    Los ítems se disponen en el eje x, de izquierda a derecha.
-    Si no le aclaramos la propiedad flex-direction al contenedor,
-    row es el valor por defecto.
-    */
     flex-direction: row;
-
-    /*
-    https://www.w3schools.com/cssref/css3_pr_flex-wrap.php
-
-    The flex-wrap property specifies whether the flexible items
-    should wrap or not.
-
-    Note: If the elements are not flexible items,
-    the flex-wrap property has no effect.
-    */
     flex-wrap: wrap;
-
-    /*
-    Horizontal
-
-    justify-content
-    
-    Con esta propiedad alineamos los ítems a lo largo del main axis.
-    Si es horizontal, se alinearán en función de la fila. Si es vertical,
-    se alinearán en función de la columna.
-    */
     justify-content: center;
-
-    /* 
-    Vertical
-
-    align-items
-
-    Con esta propiedad alineamos los ítems a lo largo del cross axis.
-    Si no aclaramos esta propiedad, el valor por defecto es stretch,
-    en otras palabras, los ítems ocuparán todo el espacio disponible
-    en el cross axis.
-    */
-    /* align-items: stretch;  */
-
-    /* 
-    Vertical
-    
-    align-content 
-    
-    Si tenemos un contenedor de una sola línea (donde flex-flow se
-    establece como no-wrap) utilizaremos align-items, pero en el caso
-    de que estemos trabajando con contenedores multilínea debemos
-    utilizar align-content.
-
-    Con esta propiedad alineamos los ítems a lo largo del cross axis
-    cuando los contenedores flexibles incluyen de varias líneas
-    (donde flex-flow se establece en wrap o wrap-reverse).
-
-    Los valores que admite la propiedad align-content son similares
-    a los que podemos utilizar para align-items. Vale la pena probar
-    como funcionan ambas propiedades para entenderlas bien.
-    */
-    /* align-content: flex-end;  */
 }
 
 #best-of-the-month .boton {
-    /* Layout */
     width: 134px;
     height: 44px;
     margin: 0;
-
-    /* Style */
     border-radius: 50px;
     background: rgba(139, 72, 191, 0.70);
-
-    /* Typography */
     color: #FFF;
     font-size: 13.181px;
     font-style: normal;
@@ -919,53 +535,33 @@ a {
     line-height: normal;
 }
 
-/* Get to know the best teams of the year */
+
 #best-teams-of-the-year {
-    /* Layout */
     height: 224px;
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 56px;
     padding-bottom: 43px;
-    /* ----------------------------------------------------
-    Flex container
-    #teams
-
-    Flex items del flex container
-    .teams-leyenda
-    .teams-boton
-    ---------------------------------------------------- */
-    /* Properties for the flex container */
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    /* Horizontal */
     justify-content: flex-start;
-    /* Vertical */
     align-items: flex-start;
-    /* Vertical -> contenedores multilínea debemos utilizar align-content */
     align-content: flex-start;
-
-    /* Style */
     background: #8B48BF;
 }
 
 #best-teams-of-the-year .leyenda {
-    /* Layout */
     height: 100%;
     width: 45%;
 }
 
 #best-teams-of-the-year .leyenda .get-the-best {
-    /* Layout */
     margin: 0;
-
-    /* Typography */
     color: #FFF;
     font-size: 40px;
     font-weight: 700;
     line-height: 119.6%;
-    /* 47.84px */
     letter-spacing: -0.2px;
 }
 
@@ -974,23 +570,18 @@ a {
 }
 
 #best-teams-of-the-year .boton-best-teams {
-    /* Layout */
+
     height: 100%;
     width: 50%;
 }
 
 #best-teams-of-the-year .boton-best-teams .boton {
-    /* Layout */
     width: 134px;
     height: 44px;
     margin-left: 70%;
-
-    /* Style */
     border-radius: 50px;
     background: #FFF;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
-
-    /* Typography */
     color: #8B48BF;
     font-size: 13.181px;
     font-style: normal;
@@ -998,54 +589,36 @@ a {
     line-height: normal;
 }
 
-/* Footer */
+
 #pie-de-pagina {
-    /* Layout */
     height: 247px;
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 56px;
     padding-bottom: 43px;
-    /* ----------------------------------------------------
-    Flex container
-    #pie-de-pagina
-
-    Flex items del flex container
-    #pie-de-pagina-XXXX
-    ---------------------------------------------------- */
-    /* Properties for the flex container */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* Horizontal */
     justify-content: space-around;
-    /* Vertical */
     align-items: flex-start;
-    /* Vertical -> contenedores multilínea debemos utilizar align-content */
     align-content: flex-start;
-
-    /* Style */
     background: #1E1E26;
 }
 
-/* Logo */
 #pie-de-pagina #logo {
     width: 15%;
 }
 
 #pie-de-pagina #logo .sportit {
-    /* Layout */
     margin-bottom: 70px;
 }
 
 #pie-de-pagina #logo .logo svg {
-    /* Layout */
     width: 107.684px;
     height: 25px;
 }
 
 #pie-de-pagina #logo .redes-sociales svg {
-    /* Layout */
     width: 20px;
     height: 20px;
     margin-left: 5px;
@@ -1056,15 +629,10 @@ a {
     cursor: pointer;
 }
 
-/* Menu, Links */
 #pie-de-pagina #menu-links {
     width: 60%;
     display: flex;
     
-}
-
-#pie-de-pagina #menu-links #menu {
-    /* display: flex; */
 }
 
 #pie-de-pagina #menu-links #links {
@@ -1073,59 +641,36 @@ a {
 
 #pie-de-pagina #menu-links #menu li,
 #pie-de-pagina #menu-links #links li {
-    /* Layout */
     padding-bottom: 12px;
 }
 
 #pie-de-pagina #menu-links #menu a:link,
 #pie-de-pagina #menu-links #links a:link {
-    /* Typography */
     color: #FFF;
     font-weight: 400;
     line-height: normal;
 }
 
-/* Newsletter */
 #pie-de-pagina #newsletter {
-    /* Layout */
     width: 25%;
-    /* ----------------------------------------------------
-    Flex container
-    #pie-de-pagina-call-to-action
-
-    Flex items del flex container
-    .newsletter
-    .boton
-    .copyright
-    ---------------------------------------------------- */
-    /* Properties for the flex container */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* Horizontal */
     justify-content: flex-start;
-    /* Vertical */
     align-items: flex-start;
-    /* Vertical -> contenedores multilínea debemos utilizar align-content */
     align-content: flex-start;
 }
 
 #pie-de-pagina #newsletter .formulario {
-    /* Layout */
     margin-bottom: 80px;
 }
 
 #pie-de-pagina #newsletter .formulario .email {
-    /* Layout */
     width: 201px;
     height: 44px;
     padding-left: 10px;
-
-    /* Style */
     border-radius: 50px;
     background: #FFF;
-
-    /* Typography */
     color: #A0A0A0;
     font-size: 13.181px;
     font-weight: 600;
@@ -1133,16 +678,11 @@ a {
 }
 
 #pie-de-pagina #newsletter .formulario .boton {
-    /* Layout */
     width: 63px;
     height: 44px;
     margin-left: 9px;
-
-    /* Style */
     border-radius: 50px;
     background: #8B48BF;
-
-    /* Typography */
     color: #FFF;
     font-size: 13.181px;
     font-weight: 500;
@@ -1150,14 +690,13 @@ a {
 }
 
 #pie-de-pagina #newsletter .copyright {
-    /* Typography */
     color: #8C8C94;
     font-size: 12.5px;
     font-weight: 500;
     line-height: normal;
 }
 
-/* hover | Botones, menus, links */
+
 #encabezado .boton:hover,
 #encabezado .menu a:hover,
 #principal .boton:hover,
@@ -1166,11 +705,7 @@ a {
 #pie-de-pagina #menu a:hover,
 #pie-de-pagina #links a:hover,
 #pie-de-pagina #newsletter .formulario .boton:hover {
-    /* Layout */
     padding: 12px 0px;
-
-    /* Style */
-    background: #3CDDF3;
     border-radius: 50px;
     padding-left: 20px;
     padding-right: 20px;
@@ -1178,10 +713,8 @@ a {
     box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
     cursor: pointer;
     outline: none;
-    transition: 0.2s all;
-
-    /* Typography */
-    font-size: 22px;
+    transition: 0,25s all;
+    font-size: 16px;
     color: #1E1E26;
     text-decoration: none;
 }
@@ -1190,8 +723,6 @@ a {
     background: #3CDDF3;
 }
 
-
-/* Mobile: 480px */
 @media only screen and (max-width: 480px) {
 
     * {
@@ -1228,51 +759,9 @@ a {
 
     }
 
-    /* Best of the month */
+
     #best-of-the-month {
         height: 594px;
-        /*display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: space-around;
-        background: #FFF; */
-    }
-
-    #best-of-the-month h2 {
-        /* margin: 0;
-        color: #242E53;
-        text-align: center;
-        font-size: 39.214px;
-        font-weight: 700;
-        line-height: 156.6%;
-        letter-spacing: -0.392px; */
-    }
-
-    #best-of-the-month #tarjetas {
-        /* margin-left: 0;
-        margin-right: 0;
-        margin-top: 100px;
-        margin-bottom: 50px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around; */
-    }
-
-    #best-of-the-month #tarjetas .contenido {
-        /* width: 420px;
-        height: 260px;
-        margin: 0;
-        padding-top: 50px;
-        padding-bottom: 20px;
-        padding-left: 20px;
-        padding-right: 20px;
-        display: flex;
-        flex-wrap: wrap;
-        align-content: space-around;
-        background: #FAFAFA;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-        position: relative; */
     }
 
     #best-of-the-month #tarjetas .contenido.sanyo,
@@ -1281,55 +770,6 @@ a {
         display: none;
     }
 
-    #best-of-the-month #tarjetas .contenido .avatar {
-        /* position: absolute;
-        left: 42%;
-        top: -18%; */
-    }
-
-    #best-of-the-month #tarjetas .contenido .nombre {
-        /* width: 100%;
-        margin: 0;
-        text-align: center;
-        color: #3F4868;
-        font-size: 16.071px;
-        font-weight: 700;
-        line-height: 156.6%;
-        letter-spacing: -0.161px; */
-    }
-
-    #best-of-the-month #tarjetas .contenido .descripcion {
-        /* width: 100%;
-        margin: 0;
-        color: #B9B9C1;
-        text-align: center;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 156.6%; */
-    }
-
-    #best-of-the-month #boton-best-month {
-        /* margin: 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center; */
-    }
-
-    #best-of-the-month .boton {
-        /* width: 134px;
-        height: 44px;
-        margin: 0;
-        border-radius: 50px;
-        background: rgba(139, 72, 191, 0.70);
-        color: #FFF;
-        font-size: 13.181px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal; */
-    }
-
-    /* Get to know the best teams of the year */
     #best-teams-of-the-year {
         background: #3CDDF3;
         height: 366px;
@@ -1357,7 +797,7 @@ a {
         font-size: 40px;
         font-style: normal;
         font-weight: 700;
-        line-height: 119.6%; /* 47.84px */
+        line-height: 119.6%; 
         letter-spacing: -0.2px;
     }
 
@@ -1389,37 +829,18 @@ a {
         box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
     }
 
-    /* Footer */
     #pie-de-pagina {
-        /* Layout */
         height: 455px;
         padding: 0;
-        
-        /* padding-left: 10%;
-        padding-right: 10%;
-        padding-top: 56px;
-        padding-bottom: 43px; */
-        /* Properties for the flex container */
-        /* display: flex; */
         flex-direction: column-reverse;
-        /* flex-wrap: wrap; */
-        /* Horizontal */
         justify-content: center;
-        /* Vertical */
-        /* align-items: flex-end; */
-        /* Vertical -> contenedores multilínea debemos utilizar align-content */
-        /* align-content: flex-start; */
     }
 
     #pie-de-pagina>section {
-        /* height: 33.3333%; */
-        /* width: 100%; */
-        /* border: yellow solid 5px; */
         margin-top: 10px;
         margin-bottom: 10px;
     }
 
-    /* Logo */
     #pie-de-pagina #logo {
         width: 100%;
         display: flex;
@@ -1432,70 +853,19 @@ a {
         margin-bottom: 30px;
     }
 
-    #pie-de-pagina #logo .logo svg {
-        /* width: 107.684px;
-        height: 25px; */
-    }
-
     #pie-de-pagina #logo .redes-sociales svg {
-        /* width: 20px;
-        height: 20px; */
         margin-left: 35px;
         margin-right: 35px;
     }
 
-    #pie-de-pagina #logo .redes-sociales svg:hover {
-        /* cursor: pointer; */
-    }
-
-    /* Menu, Links */
     #pie-de-pagina #menu-links {
         width: 100%;
         display: flex;
     }
 
-    #pie-de-pagina #menu-links #menu {
-        /* display: flex; */
-    }
-
-    #pie-de-pagina #menu-links #links {
-        /* margin-left: 10px; */
-    }
-
-    #pie-de-pagina #menu-links #menu li,
-    #pie-de-pagina #menu-links #links li {
-
-        /* padding-bottom: 12px; */
-    }
-
-    #pie-de-pagina #menu-links #menu a:link,
-    #pie-de-pagina #menu-links #links a:link {
-
-        /* color: #FFF;
-        font-weight: 400;
-        line-height: normal; */
-    }
-
-    /* Newsletter */
     #pie-de-pagina #newsletter {
         width: 100%;
         padding: 3% 30px 3%;
-        /* display: flex;
-        flex-direction: row;
-        flex-wrap: wrap; */
-        /* Horizontal */
-        /* justify-content: flex-start; */
-        /* Vertical */
-        /* align-items: flex-start; */
-        /* Vertical -> contenedores multilínea debemos utilizar align-content */
-        /* align-content: flex-start; */
-
-        /*
-        position relative + position absolute
-        Si nuestras cajas (hijas) están dentro de otra caja (padre), el punto de referencia seguirá siendo el body a menos que hagamos relativa la posición de su padre.
-        ¿Cuándo se suele utilizar?
-        Cuando queremos sacar un elemento del flujo normal y posicionarlo en un punto fijo con respecto a su contenedor o el body.
-        */
         position: relative;
     }
 
@@ -1506,46 +876,14 @@ a {
 
     #pie-de-pagina #newsletter .formulario .email {
         width: 70%;
-        /* height: 44px; */
-        /* padding-left: 10px; */
-
-        /* border-radius: 50px;
-        background: #FFF; */
-
-        /* color: #A0A0A0;
-        font-size: 13.181px;
-        font-weight: 600;
-        line-height: normal; */
     }
 
     #pie-de-pagina #newsletter .formulario .boton {
 
         width: 20%;
-        /* height: 44px;
-        margin-left: 9px;
-
-        border-radius: 50px;
-        background: #8B48BF;
-
-        color: #FFF;
-        font-size: 13.181px;
-        font-weight: 500;
-        line-height: normal; */
     }
 
     #pie-de-pagina #newsletter .copyright {
-
-        /* color: #8C8C94;
-        font-size: 12.5px;
-        font-weight: 500;
-        line-height: normal; */
-
-        /*
-        position relative + position absolute
-        Si nuestras cajas (hijas) están dentro de otra caja (padre), el punto de referencia seguirá siendo el body a menos que hagamos relativa la posición de su padre.
-        ¿Cuándo se suele utilizar?
-        Cuando queremos sacar un elemento del flujo normal y posicionarlo en un punto fijo con respecto a su contenedor o el body.
-        */
         position: absolute;
         left: 30%;
         top: 430%;
