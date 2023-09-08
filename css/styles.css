@@ -215,6 +215,7 @@ a {
     box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
     color: #FFFFFF;
     position: sticky;
+    border-width: 0;
 }
 
 @media screen and (max-width: 480px) {
@@ -359,6 +360,8 @@ a {
     width: 553px;
     display: flex;
     color: #B3B2B7;
+    flex-direction: column;
+    margin: 0;
 }
 
 .pro-skills-frame-bottom {
@@ -369,19 +372,27 @@ a {
     margin-top: 24px;
 }
 
-.right-column span {
+.pro-skill-name {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    width: 100%;
+
+}
+
+.pro-skill-name span {
     color: #323851;
-    padding-bottom: 1.5rem;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     letter-spacing: -0.24px;
-    width: 228px;
-    height: 23px;
+    width: 100%;
+    height: 43px;
+    margin: 0 0 0 23px;
 }
 
-.right-column p {
+.pro-skill-content p {
     color: #B3B2B7;
     font-size: 16.298px;
     font-style: normal;
@@ -390,9 +401,10 @@ a {
     /* 25.523px */
     letter-spacing: -0.163px;
     margin-top: 18px;
+    margin-left: 93px;
 }
 
-.left-column {
+.pro-skill-name {
     margin-right: 23px;
 }
 
@@ -404,6 +416,10 @@ a {
     border-radius: 30px;
     background: #8B48BF;
     color: #FFFFFF;
+    border-width: 0;
+    width: 70px;
+    height: 43px;
+    margin: 0;
 }
 
 .bullet-subtitle {
@@ -412,6 +428,70 @@ a {
     justify-content: center;
     align-items: flex-start;
     gap: 18px;
+}
+
+@media screen and (max-width: 480px) {
+
+    .pro-skills-container {
+        display: flex;
+        width: 1440px;
+        padding: 40px 0px;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        gap: 24px;
+        background: #FAFAFA;
+        width: Fixed (1, 440px);
+        height: Hug (428px);
+        top: 985px;
+        left: -1px;
+        padding-top: 65px;
+        gap: 24px;
+    }
+
+    .pro-skills-row {
+        margin-left: 34px;
+    }
+
+    .pro-skills-frame {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .pro-skills-frame-bottom {
+        margin-bottom: 0px;
+    }
+
+    .pro-skill-name {
+        margin: 0;
+    }
+
+    .pro-skill-name span {
+        border-radius: 50px 0px 0px 50px;
+        background: rgba(139, 72, 191, 0.30);
+        display: block;
+        width: 100%;
+        height: 43px;
+        padding: 10px 0 10px 88px;
+    }
+
+    .number-button {
+        position: absolute;
+    }
+
+    .pro-skill-content {
+        margin-top: 21px;  
+        width: 100%;
+    }
+    
+    .pro-skill-content p {
+        padding: 10px;  
+        width: 428px;  
+        margin: 0;
+    }
+
+
+    
 }
 
 /* -------------------------------------- */
