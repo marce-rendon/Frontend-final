@@ -147,20 +147,6 @@ a {
     }
 }
 
-#principal .boton {
-    width: 134px;
-    height: 44px;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 50px;
-    background: #8B48BF;
-    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
-    color: #FFFFFF;
-    position: sticky;
-}
-
 #hero {
     margin: 0px 170px 0px 180px;
     display: inline-flex;
@@ -172,16 +158,6 @@ a {
 #hero .hero-picture img{
     width: 540px;
     height: 461.07px;
-}
-
-@media screen and (max-width: 480px) {
-    #hero .hero-picture img {
-        width: 400px;
-        height: auto;
-        margin-right: 2.5rem;
-        margin-left: 2.5rem;
-        margin-bottom: 6.25rem;
-    }
 }
 
 #hero .live {
@@ -197,33 +173,13 @@ a {
     height: 228px;
 }
 
-@media screen and (max-width: 480px) {
-    #hero .live {
-        text-align: center; 
-        align-self: auto; 
-        width: 8rem; 
-        height: auto; 
-        color: #232C50;
-        text-align: right;
-        font-size: 50px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 114.6%; 
-        letter-spacing: -1.75px;
-        align-self: stretch;
-    }
+.live p {
+    font-size: 50px;
 }
 
 #hero .live::after {
     content: "Follow the Telcel Huawei Mexico Open 2022 for free";
     color: #232C50;
-}
-
-@media screen and (max-width: 480px) {
-    #hero .hero-description {
-        margin-right: 2.5rem;
-        margin-left: 2.5rem;
-    }
 }
 
 #hero .description {
@@ -243,9 +199,62 @@ a {
     margin-bottom: 30px;
 }
 
-
 .align-right {
     text-align: right;
+}
+
+#principal .boton {
+    width: 134px;
+    height: 44px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    background: #8B48BF;
+    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    position: sticky;
+}
+
+@media screen and (max-width: 480px) {
+    #hero .hero-picture img {
+        width: 400px;
+        height: auto;
+        margin: 0 2.5rem;
+        margin-bottom: 6.25rem;
+    }
+
+    #hero .live {
+        width: 400px; 
+        height: auto; 
+        color: #232C50;
+        text-align: right;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 114.6%; 
+        letter-spacing: -1.75px;
+        align-self: stretch;
+    }
+
+    #hero .description {
+        width: 400px;
+    }
+
+    #hero .hero-description {
+        margin: 0;
+        margin-bottom: 40px;
+    }
+
+    #principal .boton {
+        width: 134px; 
+        height: 44px;
+    }
+
+    .hero-description div{
+        margin: 0 2.5rem;
+    }
 }
 
 #pros .pro-banner {
@@ -254,7 +263,6 @@ a {
     padding: 40px 0px;
     justify-content: center;
     align-items: center;
-    background-color: #8B48BF;
     height: 168px;
     gap: 100px;
     background-color: #8B48BF;
@@ -288,6 +296,40 @@ a {
     font-style: normal;
     font-weight: 500;
     line-height: 151.1%;
+}
+
+.pro-subtitle:after{
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet consequat purus sit amet sodales. In faucibus ut nisi eu dignissim. Vestibulum fringilla velit sed tincidunt tincidunt.";
+}
+
+@media screen and (max-width: 480px) {
+    #pros .pro-banner div {
+        width: 440px;
+    }
+
+    #pros .pro-banner {
+        height: auto;
+        background: #3CDDF3;
+        flex-direction: column;
+        gap: 50px;
+        display: flex;
+        align-self: stretch;
+        padding: 40px 20px;
+    }
+
+    .pro-title {
+        width: 100%;
+    }
+
+    .pro-subtitle {
+        width: 100%;
+        margin: 0;
+    }
+
+    .pro-subtitle:after{
+        content: "Manage provides all the functionality your\A teas needs, without the complexity. Our software is\A tailor-made for modern digital product teams";
+        white-space: pre;
+    }
 }
 
 .pro-skills-container {
@@ -1100,10 +1142,6 @@ a {
     #hero .hero-picture {
         width: 100%;
         height: auto;
-    }
-
-    #hero .live {
-        font-size: 30px;
     }
 
     #hero .description {
